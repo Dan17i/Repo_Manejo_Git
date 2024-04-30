@@ -2,14 +2,14 @@ package co.edu.uniquindio.co;
 
 public class Persona {
     //-------------------------------Atributos------------------------------------------
-    private int  edad;
-    private int telefono;
+    private byte  edad;
+    private String telefono;
     private int identificacíon;
     private String  Nombre;
     private String Apellido;
     private String Dirección;
     
-    public Persona(int edad, int telefono, int identificacíon, String nombre, String apellido, String dirección) {
+    public Persona(byte edad, String telefono, int identificacíon, String nombre, String apellido, String dirección) {
         this.edad = edad;
         this.telefono = telefono;
         this.identificacíon = identificacíon;
@@ -18,19 +18,23 @@ public class Persona {
         Dirección = dirección;
     }
 
+    public Persona(){
+
+    }
+
     public int getEdad() {
         return edad;
     }
 
-    public void setEdad(int edad) {
+    public void setEdad(byte edad) {
         this.edad = edad;
     }
 
-    public int getTelefono() {
+    public String getTelefono() {
         return telefono;
     }
 
-    public void setTelefono(int telefono) {
+    public void setTelefono(String telefono) {
         this.telefono = telefono;
     }
 
@@ -68,8 +72,8 @@ public class Persona {
 
     @Override
     public String toString() {
-        return "Persona [edad=" + edad + ", telefono=" + telefono + ", identificacíon=" + identificacíon + ", Nombre="
-                + Nombre + ", Apellido=" + Apellido + ", Dirección=" + Dirección + "]";
+        return "Persona tiene una edad de: " + edad + "\n telefono : " + telefono + "\n identificacíon :" + identificacíon + "\n Nombre :"
+                + Nombre + "\n Apellido : " + Apellido + "\n Dirección :" + Dirección ;
     }
 
     
