@@ -1,7 +1,7 @@
 package co.edu.uniquindio.co;
 
 public class Persona {
-    
+    //-------------------------------Atributos------------------------------------------
     private int  edad;
     private int telefono;
     private int identificacíon;
